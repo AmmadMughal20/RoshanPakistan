@@ -1,0 +1,130 @@
+@import '../../App.scss';
+
+.service-card {
+    background-color: white;
+    width: auto;
+    max-width: 250px;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 0%;
+    height: 15em;
+
+    .icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+
+        margin: auto;
+        margin-top: 15%;
+
+        .icon {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .title-box {
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        .title {
+            font-family: 'OpenSans', sans-serif;
+            color: $primary-grey;
+        }
+    }
+
+    .description-box {
+        text-align: left;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: none;
+
+        .description {
+            font-family: 'PTSans', sans-serif;
+        }
+    }
+
+    .bottom-icon {
+        text-align: left;
+        padding-top: 0.5rem;
+
+        .icon {
+            font-family: 'PTSans', sans-serif;
+            color: #0E59F2;
+
+            &:hover {
+                transition: transform 0.25s ease-in-out;
+                transform: rotate(405deg);
+                color: grey
+            }
+        }
+    }
+
+    &:hover {
+        background-color: $primary-grey;
+        transform: rotateZ(360deg);
+        border-radius: 10px;
+        padding: 2rem;
+        height: 15em;
+        transition: background-color 0.25s ease-in, transform 0.25s ease-in;
+
+        .icon-box {
+            background-color: $primary-grey;
+            margin: 0%;
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            transition: background-color 0.25s ease-in, margin 0.25s ease-in;
+
+            .icon {
+                transform: scale(0.7);
+                filter: grayscale(100%) brightness(1000%);
+                transition: filter 0.25s ease-in, transform 0.25s ease-in;
+            }
+        }
+
+        .title-box {
+            text-align: left;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            .title {
+                color: white;
+                text-decoration: underline;
+                font-family: 'OpenSans', sans-serif;
+                font-size: 1rem;
+                transition: font-size 0.25s ease-in, color 0.25s ease-in, text-decoration 0.25s ease-in;
+            }
+        }
+
+        .description-box {
+            text-align: left;
+            padding-top: 0.25rem;
+            display: block;
+            color: white;
+            transition: display 0.25s ease-in;
+
+            .description {
+                font-family: 'PTSans', sans-serif;
+                font-size: 0.75rem;
+            }
+        }
+
+        .bottom-icon {
+            text-align: left;
+            padding-top: 0.5rem;
+
+            .icon {
+                font-family: 'PTSans', sans-serif;
+                filter: grayscale(100%);
+                transition: 'filter 0.3s ease-in-out'
+            }
+        }
+    }
+}
+
+

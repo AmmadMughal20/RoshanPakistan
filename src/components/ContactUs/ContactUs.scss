@@ -1,0 +1,155 @@
+@import '../../App.scss';
+
+.feedback-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    height: auto;
+    background-color: white;
+    padding: 4%;
+
+    .left-content {
+        width: 50%;
+
+        .main-heading {
+            text-align: left;
+            color: $primary-grey;
+            margin-top: 7%;
+            font-size: 3rem;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .bottom-para {
+            text-align: justify;
+            max-width: 85%;
+            margin-bottom: none;
+
+            .bottom-para-text {
+                margin-top: 2%;
+                color: #4c4c4c;
+                font-family: 'LatoRegular', sans-serif;
+
+            }
+
+        }
+
+    }
+
+    .right-content {
+        background-color: #d7d6e5;
+        width: 50%;
+        height: max-content;
+        border-radius: 2%;
+        padding: 1%;
+
+        .form {
+
+            .textField {
+                width: 48%;
+                margin: 1%;
+                background-Color: white
+            }
+
+            .textField1 {
+                width: 98%;
+                margin: 1%;
+                background-Color: white
+            }
+
+            .textArea {
+                width: 97%;
+                margin: 1%;
+                border-radius: 1%
+            }
+
+            .buttonContainer {
+                text-align: right;
+                margin-right: 1%;
+                margin-top: 1%;
+
+                .buttonBody {
+                    color: #f17312;
+                    width: 30%;
+                    border-Color: #f17312
+                }
+
+            }
+
+
+        }
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .feedback-container {
+        flex-direction: column;
+    
+        .left-content {
+            width: 100%;
+    
+            .main-heading {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            
+            .bottom-para {
+                max-width: 90%;
+                margin: auto;
+                
+                .bottom-para-text {
+                    text-align: justify;
+                    font-size: 0.75rem;
+                }
+            }
+    
+        }
+    
+        .right-content {
+            background-color: #d7d6e5;
+            width: 100%;
+            height: max-content;
+            border-radius: 2%;
+            padding: 2%;
+    
+            .form {
+    
+                .textField {
+                    width: 48%;
+                    margin: 1%;
+                    background-Color: white
+                }
+    
+                .textField1 {
+                    width: 98%;
+                    margin: 1%;
+                    background-Color: white
+                }
+    
+                .textArea {
+                    width: 97%;
+                    margin: 1%;
+                    border-radius: 1%
+                }
+    
+                .buttonContainer {
+                    text-align: right;
+                    margin-right: 1%;
+                    margin-top: 1%;
+    
+                    .buttonBody {
+                        color: #f17312;
+                        width: 30%;
+                        border-Color: #f17312
+                    }
+    
+                }
+    
+    
+            }
+        }
+    } 
+}

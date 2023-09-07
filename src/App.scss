@@ -1,0 +1,116 @@
+$customFonts: './fonts/';
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("#{$customFonts}OpenSans.ttf") format("truetype"),
+    /* Additional font properties if needed */
+}
+
+@font-face {
+    font-family: "PTSans";
+    src: url("#{$customFonts}PTSans-Regular.ttf") format("truetype"),
+    /* Additional font properties if needed */
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("#{$customFonts}/Lato/Lato-Bold.ttf") format("truetype"),
+  /* Additional font properties if needed */
+}
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url("#{$customFonts}/Lato/Lato-Regular.ttf") format("truetype"),
+  /* Additional font properties if needed */
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("#{$customFonts}/Visby/Fontspring-DEMO-visbycf-light.otf") format("opentype"),
+  /* Additional font properties if needed */
+}
+
+@font-face {
+  font-family: "Century";
+  src: url("#{$customFonts}/Century/GOTHICB.TTF") format("truetype"),
+  /* Additional font properties if needed */
+}
+
+@font-face {
+  font-family: "CenturyItalic";
+  src: url("#{$customFonts}/Century/GOTHICI.TTF") format("truetype"),
+  /* Additional font properties if needed */
+}
+
+$primary-grey : #4a4161;
+$secondary-grey : #d7d6e5;
+$primary-gradient : linear-gradient(to right, #f71e0d, #f17312);
+
+*{
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rattle {
+  0% {
+      transform: rotate(-10deg);
+  }
+
+  20% {
+      transform: rotate(10deg);
+  }
+
+  40% {
+      transform: rotate(-10deg);
+  }
+
+  60% {
+      transform: rotate(10deg);
+  }
+
+  80% {
+      transform: rotate(-10deg);
+  }
+
+  100% {
+      transform: rotate(0deg);
+  }
+}

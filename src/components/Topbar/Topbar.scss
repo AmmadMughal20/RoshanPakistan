@@ -1,0 +1,143 @@
+@import '../../App.scss';
+
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    background: white;
+    padding: 0.5% 6%;
+    color: black;
+
+    &.visible {}
+
+    &.hidden {
+        display: none;
+        transition: display 1s ease-in;
+    }
+
+    .top-bar-center {
+        width: 100%;
+        .center-container {
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+            justify-content: center;
+            .top-bar-text {
+                .text-item {
+                    font-size: 1rem;
+                }
+
+                .icon {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .top-bar-left {
+        .left-container {
+
+            .top-bar-text {
+                .text-item {
+                    font-size: 1rem;
+                }
+
+                .icon {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .top-bar-right {
+
+        .right-container {
+
+            .top-bar-text {
+                .text-item {
+                    font-size: 1rem;
+                }
+
+                .icon {
+                    width: 100%;
+                }
+            }
+
+            .top-bar-icon {
+
+                .link {
+                    text-decoration: none;
+                    color: white;
+
+                    .icon {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 900px) {
+    .top-bar-container {
+        padding: 0.5% 3%;
+
+        &.visible {}
+
+        &.hidden {
+            display: none;
+        }
+
+        .top-bar-left {
+            .left-container {
+
+                .top-bar-text {
+                    .text-item {
+                        font-size: 0.75rem;
+                    }
+
+                    .icon {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+
+        .top-bar-right {
+
+            .right-container {
+
+                .top-bar-text {
+                    .text-item {
+                        font-size: 0.75rem;
+                    }
+                }
+
+                .top-bar-icon {
+
+                    .link {
+                        text-decoration: none;
+                        color: white;
+
+                        .icon {
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .top-bar-container {
+
+        &.visible {
+            display: none;
+        }
+    }
+}

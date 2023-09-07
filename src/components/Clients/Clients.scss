@@ -1,0 +1,67 @@
+@import '../../App.scss';
+
+.clients-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    min-height: 10rem;
+    padding: 6% 12%;
+    justify-content: space-between;
+
+    .clients-heading-item {
+        margin: auto;
+        margin-left: 5rem;
+        margin-right: 1rem;
+
+        .clients-heading {
+            font-family: 'Lato', sans-serif;
+            color: $primary-grey;
+        }
+    }
+
+    .straight-line-item {
+        margin: auto;
+        margin-right: 1rem;
+        margin-left: 2rem;
+
+        .straight-line {
+            height: 80px;
+            width: 3.5px;
+            background-color: $primary-grey;
+        }
+    }
+
+    .slider-item {
+        margin: auto;
+        max-width: 70%;
+        margin-left: 1vh;
+    }
+
+    .client-logos-container {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 70%;
+        margin-right: 5rem;
+
+        .client-logo {
+            height: 120px;
+            width: auto;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease-in-out;
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .clients-container{
+        display: none;
+    }
+}

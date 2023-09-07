@@ -1,0 +1,121 @@
+@import '../../App.scss';
+
+
+.main-container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 28%;
+    background-size: cover;
+    background-image: url('../../images/assetsss/F5Vv9R4b0AA7U7J.png');
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+
+    .text-container {
+        text-align: center;
+
+        .main-heading {
+            color: white;
+            margin-bottom: 0.5rem;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .bottom-para {
+            color: white;
+            letter-spacing: 0.5rem;
+            font-family: 'Visby', sans-serif;
+        }
+    }
+
+    .button-container {
+        padding: 2rem;
+        text-align: center;
+
+        .get-started-button {
+            color: rgb(255, 255, 255);
+            background: #ffffff00;
+            height: 2rem;
+            border: 1.5px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-family: 'Century', sans-serif;
+
+            &:hover {
+                background: $primary-gradient;
+                border: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-container {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding-top: 28%;
+        background-size: cover;
+
+        .text-container {
+            text-align: center;
+
+            .main-heading {
+                color: white;
+                margin-bottom: 0.5rem;
+                font-family: 'Lato', sans-serif;
+            }
+
+            .bottom-para {
+                color: white;
+                letter-spacing: 0.5rem;
+                font-family: 'Visby', sans-serif;
+            }
+        }
+
+        .button-container {
+            padding: 2rem;
+            text-align: center;
+
+            .get-started-button {
+                color: rgb(255, 255, 255);
+                background: #ffffff00;
+                height: 2rem;
+                border: 1.5px solid white;
+                border-radius: 5px;
+                cursor: pointer;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                font-family: 'Century', sans-serif;
+
+                &:hover {
+                    background: $primary-gradient;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-container {
+        background-position: center;
+
+        .text-container {
+
+            .main-heading {
+                margin-bottom: 5rem;
+                font-size: 1.5rem;
+            }
+
+            .bottom-para {
+                color: white;
+                letter-spacing: 0.5rem;
+                font-size: .75rem;
+                font-family: 'Visby', sans-serif;
+            }
+        }
+    }
+
+}

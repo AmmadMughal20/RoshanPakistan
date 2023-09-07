@@ -1,0 +1,188 @@
+@import '../../App.scss';
+
+.taskforce-container {
+    height: auto;
+    // min-height: 100vh;
+    width: 100%;
+    background-image: url('../../images/assetsss/Group\ 3403.png');
+    background-size: cover;
+    background-color: #bebfbe;
+    background-position-y: center;
+
+    .text-container {
+        text-align: center;
+        width: 100%;
+
+        .main-heading {
+            text-align: center;
+            color: white;
+            margin: auto;
+            padding-top: 7%;
+            font-family: 'Lato', sans-serif;
+            max-width: 35%;
+        }
+    }
+
+    .bottom-para {
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 7%;
+        text-align: center;
+        max-width: 60%;
+
+        .bottom-para-text {
+            color: white;
+            letter-spacing: 0.1rem;
+            font-family: 'LatoRegular', sans-serif;
+            font-size: 20px;
+        }
+
+    }
+
+    .card-container {
+        padding: 2rem;
+        background-color: hsla(257, 20%, 32%, 0.2);
+        border-radius: 40px;
+        width: 60%;
+        min-height: 220px;
+        margin: auto;
+        margin-top: 0px;
+
+        .card-items-container {
+            display: flex;
+            justify-content: space-evenly;
+
+            .straight-line-item {
+                margin-right: 1rem;
+                margin-left: 2rem;
+
+                .straight-line {
+                    height: 23vh;
+                    width: 2px;
+                    background-color: $primary-grey;
+                    border-radius: 10px;
+                }
+            }
+
+            .card-item {
+                width: 80px;
+                text-align: center;
+                margin: auto;
+
+                .card-icon {
+                    width: 50px;
+                    height: auto;
+                }
+
+                .card-figure {
+                    margin: auto;
+                    color: $primary-grey;
+                    font-family: 'Century', sans-serif;
+                }
+
+                .card-description {
+                    font-family: 'CenturyItalic', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .about-us-container {
+        background-size: cover;
+        background-position-x: center;
+
+        .text-container {
+            text-align: center;
+            width: 100%;
+
+            .main-heading {
+                max-width: 60%;
+            }
+        }
+
+        .bottom-para {
+            width: 70%;
+        }
+
+        .card-container {
+            width: 90%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .about-us-container {
+        background-size: cover;
+        background-position-y: center;
+        background-position-x: 55%;
+    
+        .text-container {
+    
+            .main-heading {
+                margin-top: 7%;
+                margin-bottom: 2%;
+                font-size: 1.5rem;
+                max-width: 85%;
+            }
+        }
+    
+        .bottom-para {
+            text-align: justify;
+            margin: auto;
+            width: 100%;
+            margin-top: 4%;
+            margin-bottom: 4%;
+    
+            .bottom-para-text {
+                letter-spacing: 0rem;
+                font-size: 0.75rem;
+            }
+    
+        }
+    
+        .card-container {
+    
+            .card-items-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+    
+                .straight-line-item {
+                    margin: auto;
+    
+                    .straight-line {
+                        height: 2px;
+                        width: 25vh;
+                    }
+                }
+    
+                .card-item {
+                    width: auto;
+                    margin: 1%;
+                    padding: 5%;
+    
+                    .card-icon {
+                        width: 30px;
+                        height: auto;
+                    }
+    
+                    .card-figure {
+                        margin: auto;
+                        color: $primary-grey;
+                        font-size: 1.5rem;
+                        font-family: 'Century', sans-serif;
+                    }
+    
+                    .card-description {
+                        font-size: 0.75rem;
+                        font-family: 'CenturyItalic', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
