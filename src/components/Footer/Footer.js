@@ -18,7 +18,7 @@ const Footer = () => {
                 <Grid item lg={3} className='logo-item'>
                     <Grid container spacing={2} padding={2}>
                         <Grid item lg={12}>
-                            <img src={GOPLogo} className='logo' style={{ display: 'flex' }} alt='codiniti logo' />
+                            <img src={GOPLogo} className='logo' style={{ display: 'flex' }} alt='logo' />
                         </Grid>
                         <Grid item lg={12}>
                             <p style={{ color: 'white', paddingBottom: '2rem', textAlign: 'left' }}>

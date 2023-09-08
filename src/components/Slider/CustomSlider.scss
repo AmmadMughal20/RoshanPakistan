@@ -1,12 +1,11 @@
 @import '../../App.scss';
 
-.client-logo {
-    height: 120px;
+.image-container {
     width: auto;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease-in-out;
+    height: auto;
+    margin-top: 100px;
 
-    &:hover {
-        filter: grayscale(0%);
+    .banner {
+        width: 100%;
     }
 }

@@ -8,8 +8,6 @@ import Menu from '@mui/material/Menu';
 import AdbIcon from '@mui/icons-material/Adb';
 import MenuItem from '@mui/material/MenuItem';
 import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
-import CodinitiLogo from '../../images/CODINITI LOGO.png';
-import CodinitiIcon from '../../images/CODINITI ICON.png';
 import Container from '@mui/material/Container';
 import { Link } from 'react-scroll';
 import Topbar from '../Topbar/Topbar';
@@ -114,7 +112,6 @@ const Navbar = () => {
                                 ))}
                             </Menu>
                         </div>
-                        {/* <img src={CodinitiLogo} className='logo' alt='logo'/> */}
                         <div className='desktop-menu'>
                             {pages.map((page, index) => (
                                 <Link
