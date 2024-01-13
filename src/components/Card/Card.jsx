@@ -15,7 +15,7 @@ const Card = (props) => {
                     {props.description}
                 </p>
                 <button style={{ backgroundColor: '#01411c', borderRadius: '5px', padding: '10px', color: 'white', border: 'none', width: '150px' }}>
-                    Login Here
+                    Report a case
                 </button>
             </div>
         </div >

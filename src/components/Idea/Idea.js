@@ -12,16 +12,15 @@ const Idea = () => {
       <Grid container className='idea-container' >
         <Grid item className='left-content'>
           <div className='main-text'>
-            <h3 >The Prime Minister initiated Special Task Force</h3>
+            <h3 >Task Force Performance Stats</h3>
           </div>
           <div className='description-text'>
-            <p>The "Roshan Pakistan" web and mobile application is a step forward towards making electricity consumers able to access Billing Details and Information regarding Load Shedding Schedule and more at their finger tips.The "Roshan Pakistan" web and mobile application is a step forward towards making electricity consumers able to access Billing Details and Information regarding Load Shedding Schedule and more at their finger tips.The "Roshan Pakistan" web and mobile application is a step forward towards making electricity consumers able to.</p>
+            <p>The taskforce team is actively performing in the field against the electricity theives. Below are some of the real time performance stats depicting their progress.</p>
           </div>
           <div className='button-item'>
-            <CounterCard counter='50' title='TOTAL COMPLAINT'/>
-            <CounterCard counter='500' title='DISPOSED' />
-            <CounterCard counter='300' title='REDRESSED' />
-            <CounterCard counter='65' title='IN PROCESS' />
+            <CounterCard counter='5000' title='FIRs Registered'/>
+            <CounterCard counter='500' title='Arrested Persons' />
+            <CounterCard counter='300,000' title='Amount Recovered' />
           </div>
 
         </Grid>

@@ -18,8 +18,8 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 import './navbar.scss';
 
-const pages = ['Home', 'About Us', 'Services', 'Contact Us', 'Complaint: (0800-637-26)'];
-const idArray = ['Home', 'AboutUs', 'Services', 'TaskForce', 'Complaint'];
+const pages = ['Home', 'About Tf Theft', 'Statistics', 'News Feed'];
+const idArray = ['Home', 'AboutUs', 'Services', 'TaskForce'];
 const settings = [
     {
         name: 'Profile',
@@ -110,6 +110,9 @@ const Navbar = () => {
                                         </MenuItem>
                                     </Link>
                                 ))}
+                                <button>
+                                    REPORT A CASE
+                                </button>
                             </Menu>
                         </div>
                         <div className='desktop-menu'>
@@ -133,6 +136,9 @@ const Navbar = () => {
                                     </div>
                                 </Link>
                             ))}
+                            <button style={{padding:'10px', margin:'10px', borderRadius:'10px', fontSize:'medium', backgroundColor:'orange', color:'white'}}>
+                                REPORT A CASE
+                            </button>
                         </div>
                     </div>
                 </div>

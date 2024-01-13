@@ -12,10 +12,10 @@ const Clients = () => {
         <div id='Clients'>
             <Grid container spacing={2} className='clients-container'>
                 <Grid item >
-                    <Card image={image1} title='Complaint Management' description='The "Roshan Pakistan" web and mobile application is a step forward towards making electricity consumers able to access Billing Details and Information regarding Load Shedding Schedule and more at their finger tips.'/>
+                    <Card image={image1} title='Complaint Management' description='Report a case using Customer complaint management system (CCMS). A running web portal in power sector for customers to register complaints.'/>
                 </Grid>
                 <Grid item >
-                    <Card image={image2} title='Theft Reporting' description='The "Roshan Pakistan" web and mobile application is a step forward towards making electricity consumers able to access Billing Details and Information regarding Load Shedding Schedule and more at their finger tips.'/>
+                    <Card image={image2} title='Theft Reporting' description='A dedicated portal for general public to report theft cases anonymously. Click below button to report a case.'/>
                 </Grid>
             </Grid>
         </div>

@@ -7,10 +7,10 @@ const AboutUs = () => {
     <div id="AboutUs">
       <Grid container className='about-us-container' >
         <Grid item className='text-container'>
-          <Typography variant='h3' className='main-heading'>About Us</Typography>
+          <Typography variant='h3' className='main-heading'>About Tf Theft</Typography>
         </Grid>
         <Grid item className='bottom-para'>
-          <Typography variant='p' className='bottom-para-text'>The "Roshan Pakistan" web and mobile application is a step forward towards making electricity consumers able to access Billing Details and Information regarding Load Shedding Schedule and more at their finger tips.</Typography>
+          <Typography variant='p' className='bottom-para-text'>A PM initiative to deal with the rising crime of electricity theft in power sector of Pakistan. An interface for general public to report cases of electricity theft while being anonymous. Use the below mentioned channels to report a case.</Typography>
         </Grid>
       </Grid>
     </div>
